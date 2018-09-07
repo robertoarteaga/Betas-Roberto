@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container-img{
+	position: relative;
+	width: 65%;
+	height: 662px;
+	background: yellow;
+
+	display: flex;
+}
+.container-log{
+	position: relative;
+	width: 35%;
+	height: 662px;
+	background: blue;
+
+	display: flex;
+}
