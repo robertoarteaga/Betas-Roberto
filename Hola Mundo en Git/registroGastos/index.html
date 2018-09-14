@@ -3,15 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<script type="text/javascript" src="public/js/funcionalidad.js"></script>
 	<title>Inicio</title>
 </head>
 <body>
-	<div class="container-img">
-		
+	<div class="container">
+	<!-- Login -->
+	<div class="container-log" id="inicio">
+            	<img src="public/img/logo.png">
+            	<br>
+                <p><h1>Ingresa los Datos</h1></p>
+                <br>
+                <p><span class="fontawesome-user"></span><input type="text" name="user" placeholder="Usuario"></p> 
+                <br>
+                <p><span class="fontawesome-lock"></span><input type="password" name="password" placeholder="Password" ></p>
+                <br><br>
+                <input type="submit" value="Aceptar">
+                <br>
+
+        
+        <p>¿No estás registrado? <a id="reg" onclick="mostrarRegistro();">Registrate</a></p>
 	</div>
-	<div class="container-log">
-		
+	<!-- Registro -->
+	<div class="container-registro" id="registro" style="display: none;">
+            	<img src="public/img/logo.png">
+            	<br>
+                <p><h1>Ingresa los Datos</h1></p>
+                <br>
+                <p><span class="fontawesome-user"></span><input type="text" name="user" placeholder="Usuario"></p> 
+                <br>
+                <p><span class="fontawesome-lock"></span><input type="password" name="password" placeholder="Contraseña" ></p>
+                <br>
+                <p><span class="fontawesome-lock"></span><input type="password" name="password" placeholder="Confirmar Contraseña" ></p>
+                <br>
+                <br>
+                <input type="submit" value="Aceptar">
+                <br>
+
+        
+        <p>¿Ya estás registrado?<a id="reg" onclick="mostrarInicio();">Inicia Sesión</a></p>
 	</div>
+</div>
 	
 </body>
 </html>
