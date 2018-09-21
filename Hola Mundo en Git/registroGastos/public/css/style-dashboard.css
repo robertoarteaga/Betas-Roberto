@@ -1,0 +1,119 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+
+	display: flex;
+}
+.container-card{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	justify-content: flex-start;
+}
+.menu{
+	position: relative;
+	width: 75px;
+	height: 100%;
+	background-color: blue;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	justify-content: flex-start;
+}
+.back-card{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: lavender;
+
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.card{
+	position: relative;
+	width: 95%;
+	height: 90%;
+	border-radius: 5px;
+	border: 2px solid #d5d5d5;
+	background-color: maroon;
+}
+.bar{
+	position: relative;
+	width: 100%;
+	height:75px;
+	background-color: yellow;
+
+	display: flex;
+}
+.icon{
+	position: relative;
+	width: 100%;
+	height: 65px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.inicio{
+	position: relative;
+	width: 100%;
+	height: 65px;
+	background-color: orange;
+
+	display: flex;
+
+}
+.add{
+	position: relative;
+	width: 100%;
+	height: 65px;
+	background-color: gold;
+
+	display: flex;
+
+}
+.categorias{
+	position: relative;
+	width: 100%;
+	height: 65px;
+	background-color: aqua;
+
+	display: flex;
+
+}
+.space{
+	position: relative;
+	width: 100%;
+	height: 335px;
+	background-color: black;
+
+	display: flex;
+
+}
+.exit{
+	position: relative;
+	width: 100%;
+	height: 65px;
+	background-color: green;
+
+	display: flex;
+}

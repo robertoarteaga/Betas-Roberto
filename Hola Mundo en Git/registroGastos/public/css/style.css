@@ -24,11 +24,10 @@
 	width: 370px;
 	padding: 20px;
 	border-radius: 10px;
-	border: 2px solid #d5d5d5;
+	border: 2px ;
 	background-color: white;
 
 	display: flex;
-	flex-wrap: wrap;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
@@ -68,6 +67,8 @@
 	font-weight: bold;
 	font-family: 'Montserrat';
   	outline: none;
+  	cursor: pointer;
+  	color: white;
 }
 #inicio span, #registro span {
 	width: 50px;
@@ -95,5 +96,6 @@
 }
 #reg{
 	color: red;
+	cursor: pointer;
 }
 
