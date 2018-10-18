@@ -62,7 +62,8 @@
 #inicio input[type="submit"], #registro input[type="submit"] {
 	width: 280px;
 	border-radius: 3px;
-	background-color: #44C4A1;
+	background-color: #AEE0A3;
+	/*#44C4A1*/
 	color: #eee;
 	font-weight: bold;
 	font-family: 'Montserrat';

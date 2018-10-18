@@ -9,163 +9,165 @@
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
-.fontawesome-dashboard{
-	color: #fff;
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 1.5em;
-}
-.fontawesome-file-alt{
-	color: #fff;
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 1.5em;
-}
-
-.menu h1{
-	height: 50px;
-	width: 198px;
-	color: white;
-	font-family: 'Montserrat';
-	border: none;
-	outline: none;
-	padding-top: 20px;
-	font-weight: bold;
-}
-a{
-	text-decoration: none;
-}
 *{
 	margin: 0;
 	padding: 0;
 }
-span {
-	width: 50px;
-	height: 50px;
-	color: #606468; 
-	display: block;
-	float: left;
-	line-height: 50px;
-	text-align: center;
-	outline: none;
-	text-align: center;
+a{
+	text-decoration: none;
+	color: white;
 }
+a:hover{
+
+  color:#495358;
+}
+
 .container{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-
-	display: flex;
-}
-.container-card{
-	position: relative;
-	width: 100%;
-	height: 100%;
-
-	display: flex;
-	flex-wrap: wrap;
-	flex-flow: column;
-	justify-content: flex-start;
-}
-.menu{
-	position: relative;
-	width: 300px;
-	height: 100%;
-	background-color: #222D32;
-
-	display: flex;
-	flex-wrap: wrap;
-	flex-flow: column;
-	justify-content: flex-start;
-}
-.info{
-	position: relative;
-	width: 100%;
-	height: 75px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), 10% , rgba(0, 0, 0, 0.7)), url("../img/img-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
 
 	display: flex;
 	align-items: center;
-}
-.back-card{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background-color: #E1E1E1;
-
-	display: flex;
-	align-items: center;
-	align-content: center;
 	justify-content: center;
 }
 .card{
 	position: relative;
-	width: 95%;
+	width: 93%;
 	height: 90%;
-	border-radius: 5px;
-	border: 2px solid #d5d5d5;
-	background-color: maroon;
-}
-.bar{
-	position: relative;
-	width: 100%;
-	height: 79px;
-	background-color: #44C4A1;
+	background-color: yellow;
+	border-radius: 11px;
 
 	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.menu{
+	position: relative;
+	width: 250px;
+	height: 100%;
+	background-color: #AEE0A3;
+	border-radius: 11px 0px 0px 11px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-flow: column;
+}
+.card-back{
+	position: relative;
+	width: 1020px;
+	height: 100%;
+	background-color: pink;
+	border-radius: 0px 11px 11px 0px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-flow: column;
+}
+.sidebar{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: #AEE0A3;
+	border-radius: 0px 11px 0px 0px;
+
+	
+	display: flex;
+}
+.card-mid{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 0px 0px 11px 0px;
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.card-dashboard{
+	position: relative;
+	width: 95%;
+	height: 90%;
+	background-color: #F0F0F0;
+	border-radius: 11px;
 }
 .icon{
 	position: relative;
 	width: 100%;
-	height: 65px;
-	background-color: #4DB196;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-}
-.inicio{
-	position: relative;
-	width: 100%;
-	height: 65px;
-	padding-left: 20px;
+	height: 55px;
+	border-radius: 11px 0px 0px 0px;
+	border-bottom: 2px solid #BCE5B3;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-orientation: center;
-
-}
-.add{
-	position: relative;
-	width: 100%;
-	height: 65px;
-	padding-left: 20px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-}
-.categorias{
-	position: relative;
-	width: 100%;
-	height: 65px;
-	background-color: aqua;
-
-	display: flex;
 
 }
 .space{
 	position: relative;
 	width: 100%;
-	height: 335px;
-	display: flex;
-
+	height: 25px;
 }
-.exit{
+.dashboard{
 	position: relative;
 	width: 100%;
-	height: 65px;
-	background-color: green;
+	height: 55px;
+	padding: 0 65px;
 
 	display: flex;
+	align-items: center;
+}
+.category{
+	position: relative;
+	width: 100%;
+	height: 55px;
+	padding: 0 65px;
+
+	display: flex;
+	align-items: center;
+}
+.charts{
+	position: relative;
+	width: 100%;
+	height: 55px;
+
+	display: flex;
+	align-items: center;
+}
+.tables{
+	position: relative;
+	width: 100%;
+	height: 55px;
+
+	display: flex;
+	align-items: center;
+}
+span{
+	width: 25px;
+	color: white; 
+	display: block;
+	float: left;
+	line-height: 50px;
+}
+h3{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 16px;
+}
+.fontawesome-dashboard{
+	font-size: 20px;
+}
+.fontawesome-file-alt{
+	font-size: 20px;
 }
