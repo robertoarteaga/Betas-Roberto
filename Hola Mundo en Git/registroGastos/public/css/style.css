@@ -4,8 +4,8 @@
   font-family: 'FontAwesome', sans-serif;
 }
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 .container{
 	position: absolute;
@@ -18,13 +18,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 .container-log{
 	position: relative;
-	width: 370px;
-	padding: 20px;
-	border-radius: 10px;
-	border: 2px ;
+	width: 450px;
+	height: 100%;
 	background-color: white;
 
 	display: flex;
@@ -35,10 +34,8 @@
 }
 .container-registro{
 	position: relative;
-	width: 370px;
-	padding: 20px;
-	border-radius: 10px;
-	border: 2px solid #d5d5d5;
+	width: 450px;
+	height: 100%;
 	background-color: white;
 
 	display: flex;
@@ -47,6 +44,19 @@
 	align-items: center;
 	justify-content: center;
 }
+.container-alert{
+	position: relative;
+	width: 400px;
+	height: 200px;
+	background-color: white;
+	border-radius: 11px;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
 #inicio input, #registro input {
 	height: 50px;
 	width: 198px;
@@ -62,7 +72,7 @@
 #inicio input[type="submit"], #registro input[type="submit"] {
 	width: 280px;
 	border-radius: 3px;
-	background-color: #AEE0A3;
+	background-color: #F9C851;
 	/*#44C4A1*/
 	color: #eee;
 	font-weight: bold;
@@ -71,6 +81,22 @@
   	cursor: pointer;
   	color: white;
 }
+#inicio input[type="submit"]:hover, #registro input[type="submit"]:hover{
+	background-color: #F8D057;
+}
+#alert input[type="submit"] {
+	width: 280px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: #F9C851;
+	/*#44C4A1*/
+	color: #eee;
+	font-weight: bold;
+	font-family: 'Montserrat';
+  	outline: none;
+  	cursor: pointer;
+  	color: white;
+	}
 #inicio span, #registro span {
 	width: 50px;
 	height: 50px;
@@ -84,7 +110,7 @@
 	border-bottom: 2px solid #EEEEEE;
 	border-left: 1px solid #EEEEEE;
 }
-#inicio h1, #registro h1{
+#inicio h1, #registro h1, #alert h1{
 	font-family: 'Montserrat';
 	font-size: 28px;
 }
@@ -99,4 +125,6 @@
 	color: red;
 	cursor: pointer;
 }
+
+
 

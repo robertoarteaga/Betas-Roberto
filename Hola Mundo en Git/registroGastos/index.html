@@ -33,19 +33,28 @@
                 <p><h1>Registro</h1></p>
                 <br>
                 <br>
-                <p><span class="fontawesome-user"></span><input type="text" name="user" placeholder="Usuario"></p> 
+                <p><span class="fontawesome-user"></span><input type="text" name="user" id="nUser" placeholder="Usuario"></p> 
                 <br>
-                <p><span class="fontawesome-lock"></span><input type="password" name="password" placeholder="Contraseña" ></p>
+                <p><span class="fontawesome-lock"></span><input type="password" name="password" id="nPassword1" placeholder="Contraseña" ></p>
                 <br>
-                <p><span class="fontawesome-lock"></span><input type="password" name="password" placeholder="Confirmar Contraseña" ></p>
+                <p><span class="fontawesome-lock"></span><input type="password" name="password" id="nPassword2" placeholder="Confirmar Contraseña" ></p>
                 <br>
                 <br>
-                <input type="submit" value="Aceptar">
+                <input onclick="verifica();" type="submit" value="Aceptar">
                 <br>
 
         
         <p>¿Ya estás registrado? <a id="reg" onclick="mostrarInicio();">Inicia Sesión</a></p>
 	</div>
+    <div class="container-alert" id="alert" style="display: none;">
+            <h1>¡Algo anda mal!</h1>
+        <br>
+        <h1>Verifica tus datos</h1>
+        <br>
+        <input onclick="mostrarRegistro()" type="submit" value="Aceptar">
+
+    </div>
+
 </div>
 	
 </body>
