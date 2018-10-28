@@ -197,7 +197,7 @@ a{
 	padding: 30px;
 
 	display: flex;
-	align-content: space-around;
+	justify-content: space-around;
 }
 .chart-info{
 	position: relative;

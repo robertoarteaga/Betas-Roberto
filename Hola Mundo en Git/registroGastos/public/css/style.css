@@ -83,6 +83,7 @@
 }
 #inicio input[type="submit"]:hover, #registro input[type="submit"]:hover{
 	background-color: #F8D057;
+	transition:all .5s ease-in-out;
 }
 #alert input[type="submit"] {
 	width: 280px;

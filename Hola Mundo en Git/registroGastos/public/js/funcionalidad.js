@@ -1,3 +1,5 @@
+var URL = "https://registrogastosbetas.herokuapp.com/general/"
+
 
 function mostrarRegistro() {
 	document.getElementById('inicio').style.display = "none";
@@ -45,18 +47,15 @@ function ajax(config, callback){
 			break;
 	}
 }
-function registro(){
-		var correo = document.getElementById('nUser'); //AQUI VA EL INNER
-		var password = document.getElementById('nPassword');
-
+function registro(nuser,npass1){
 		var config = [{
 		method: "POST",
 		isFormData: false,
 		path: "registro.php",
 		
 	},{
-		correoElectronico: correo, 
-		password: password
+		correoElectronico: nuser, 
+		password: npass1
 	}];
 	ajax(config,callbackRegistro);
 	}
@@ -69,18 +68,23 @@ function registro(){
 		var nuser = document.getElementById('nUser').value;
 		var npass1 = document.getElementById('nPassword1').value;
 		var npass2 = document.getElementById('nPassword2').value;
-
-
+		
 		if(nuser != '' && npass1 != '' && npass1 != ''){
 			if (npass1 == npass2){
-				registro();
+				registro(nuser, npass1);
+				document.getElementById('nUser').value = '';
+				document.getElementById('nPassword1').value = '';
+				document.getElementById('nPassword2').value = '';
 			}else{
 				document.getElementById('inicio').style.display = "none";
 				document.getElementById('registro').style.display = "none";
 				document.getElementById('alert').style.display = "flex";
 			}
-		
 		} else {
-			alert("hola");
+			document.getElementById('nUser').value = '';
+			document.getElementById('nPassword1').value = '';
+			document.getElementById('nPassword2').value = '';
+			
 		}
 	}
+
