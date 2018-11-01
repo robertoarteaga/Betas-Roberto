@@ -47,6 +47,7 @@ function ajax(config, callback){
 			break;
 	}
 }
+
 function registro(nuser,npass1){
 		var config = [{
 		method: "POST",
@@ -88,3 +89,34 @@ function registro(nuser,npass1){
 		}
 	}
 
+function getLogin(){
+	var user = document.getElementById('logUser').value;
+	var password = document.getElementById('logPassword').value;
+
+	login(user,password);
+
+}
+function login(user,password){
+	var config = [{
+		method: "POST",
+		isFormData: false,
+		path: "login.php",
+		
+	},{
+		correoElectronico: user, 
+		password: password
+	}];
+	ajax(config,callbackLogin);
+}
+
+function callbackLogin(response){
+	console.log(response);
+	localStorage.setItem('user', JSON.stringify(response));
+		
+	}
+	
+function getCategoria{
+	var newCategoria = document.getElementById('newCategoria').value;
+	
+
+}

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style-dashboard.css">
+	<script type="text/javascript" src="public/js/charts.js"></script>
 	<title>Dashboard</title>
 </head>
 <body>
@@ -51,7 +52,11 @@
 					<div class="category-4" id="categ"></div>
 					</div>
 					<div class="chart-info">
-						<div id="chart-dashboard"></div>
+						<div id="chart-dashboard">
+							<h3>Agregar Categoría</h3>
+							<input type="text" placeholder="Usuario">
+							<input type="submit" onclick="getCategoria();" id="newCategoria" value="Agregar">
+						</div>
 					</div>
 					
 					

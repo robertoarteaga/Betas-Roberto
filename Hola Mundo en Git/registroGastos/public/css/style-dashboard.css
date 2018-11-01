@@ -237,9 +237,12 @@ h3{
 }
 #chart-dashboard{
 	position: relative;
-	float: left;
 	height: 350px;
 	width: 90%;
 	border-radius: 11px;
 	background-color: white;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
 }
